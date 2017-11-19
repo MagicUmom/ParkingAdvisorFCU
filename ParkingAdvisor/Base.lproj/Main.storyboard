@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9wa-9F-qyW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CKG-mk-bsM">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -642,6 +642,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1348" y="1466"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="eCo-cF-CXD">
+            <objects>
+                <viewController id="CKG-mk-bsM" customClass="MainViewController" customModule="ParkingAdvisor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VJH-Ee-nqv"/>
+                        <viewControllerLayoutGuide type="bottom" id="50R-3h-dUx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u5H-e9-S5w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTx-Kp-9Yh">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAp-c4-TPo">
+                                        <rect key="frame" x="226" y="639" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="tap_icon_report_g"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNj-pT-aQo">
+                                        <rect key="frame" x="145" y="639" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="tap_icon_monitor_g"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="50R-3h-dUx" firstAttribute="top" secondItem="iTx-Kp-9Yh" secondAttribute="bottom" id="Pks-kQ-x3o"/>
+                            <constraint firstAttribute="trailing" secondItem="iTx-Kp-9Yh" secondAttribute="trailing" id="Zvt-FK-oFk"/>
+                            <constraint firstItem="iTx-Kp-9Yh" firstAttribute="top" secondItem="VJH-Ee-nqv" secondAttribute="bottom" id="ap3-uM-1Hb"/>
+                            <constraint firstItem="iTx-Kp-9Yh" firstAttribute="leading" secondItem="u5H-e9-S5w" secondAttribute="leading" id="bAj-Xg-zKn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="uiview_mapView" destination="iTx-Kp-9Yh" id="2DC-vq-RNb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2g-QJ-8IL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.9710144927537" y="-457.33695652173918"/>
         </scene>
         <!--dashboardViewController-->
         <scene sceneID="pGg-vn-Tzv">

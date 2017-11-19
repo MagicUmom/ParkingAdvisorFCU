@@ -11,6 +11,8 @@
 		2817CD651F01365B002DDEB7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817CD641F01365B002DDEB7 /* DetailViewController.swift */; };
 		283651C51EA13EDA00A014E1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283651C41EA13EDA00A014E1 /* CoreLocation.framework */; };
 		286D27161F5ED62800D8D46F /* CircleBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286D27151F5ED62800D8D46F /* CircleBarViewController.swift */; };
+		287564941FC19A4600C8DF68 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287564931FC19A4600C8DF68 /* MainViewController.swift */; };
+		287564961FC1C88E00C8DF68 /* sdstyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 287564951FC1C88D00C8DF68 /* sdstyle.json */; };
 		289679B01F1CC6740046DB5F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289679AF1F1CC6740046DB5F /* TabBarViewController.swift */; };
 		28B518F61F7431D300CC9F6A /* TestSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B518F51F7431D300CC9F6A /* TestSecondViewController.swift */; };
 		43DC77763360D00E2235A30F /* Pods_ParkingAdvisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B458903D2B55C3AD3F1CC02C /* Pods_ParkingAdvisor.framework */; };
@@ -128,6 +130,8 @@
 		2817CD641F01365B002DDEB7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		283651C41EA13EDA00A014E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		286D27151F5ED62800D8D46F /* CircleBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBarViewController.swift; sourceTree = "<group>"; };
+		287564931FC19A4600C8DF68 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		287564951FC1C88D00C8DF68 /* sdstyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sdstyle.json; sourceTree = "<group>"; };
 		289679AF1F1CC6740046DB5F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		28B518F51F7431D300CC9F6A /* TestSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSecondViewController.swift; sourceTree = "<group>"; };
 		33A2C6A96555BFD084B110B2 /* Pods-ParkingAdvisor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingAdvisor.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkingAdvisor/Pods-ParkingAdvisor.release.xcconfig"; sourceTree = "<group>"; };
@@ -255,6 +259,7 @@
 				B1399B8A1F1601E900F44736 /* View */,
 				701E4D421EA4B68D00CAC177 /* Assets.xcassets */,
 				708D504B1E9B502E00DB4ED9 /* Info.plist */,
+				287564951FC1C88D00C8DF68 /* sdstyle.json */,
 				B1399B751F123F6600F44736 /* bstyle.json */,
 				B16996071F1C70400070DDDD /* database.json */,
 			);
@@ -296,6 +301,7 @@
 				289679AF1F1CC6740046DB5F /* TabBarViewController.swift */,
 				286D27151F5ED62800D8D46F /* CircleBarViewController.swift */,
 				28B518F51F7431D300CC9F6A /* TestSecondViewController.swift */,
+				287564931FC19A4600C8DF68 /* MainViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -522,6 +528,7 @@
 				708D506E1E9B529600DB4ED9 /* Podfile in Resources */,
 				708D50451E9B502E00DB4ED9 /* Main.storyboard in Resources */,
 				701E4D431EA4B68D00CAC177 /* Assets.xcassets in Resources */,
+				287564961FC1C88E00C8DF68 /* sdstyle.json in Resources */,
 				B1399B811F1601D500F44736 /* StoryboardiPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287564941FC19A4600C8DF68 /* MainViewController.swift in Sources */,
 				280C1E861F0ABF4600CE2B1C /* PASingleton.swift in Sources */,
 				2817CD651F01365B002DDEB7 /* DetailViewController.swift in Sources */,
 				70CE34231EA0BD0700595C55 /* MenuViewController.swift in Sources */,
