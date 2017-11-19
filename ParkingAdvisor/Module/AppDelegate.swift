@@ -19,11 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyDeMRcyPzaIpSDe8R1Fzvgkmf0EXHFPfqs")
-        
+
+//        本地推播
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.badge , .sound , .alert]){(granted,error)in
             // Enable or disable features based on authorization.
         }
+        application.registerForRemoteNotifications()
+
         
         return true
     }
@@ -49,8 +52,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print("DEVICE TOKEN = \(deviceToken as NSData)")
+    }
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print(error)
+    }
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        print(userInfo)
+    }
 }
 
 // MARK: - UIColor Extension
