@@ -662,6 +662,9 @@
                                         <rect key="frame" x="226" y="639" width="60" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="tap_icon_report_g"/>
+                                        <connections>
+                                            <action selector="btn_report:" destination="CKG-mk-bsM" eventType="touchUpInside" id="3om-Rp-ywv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNj-pT-aQo">
                                         <rect key="frame" x="145" y="639" width="60" height="60"/>

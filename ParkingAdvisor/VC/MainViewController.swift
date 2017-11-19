@@ -22,6 +22,7 @@ class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapVie
     let locationManager = CLLocationManager()
     var img_view_tick : UIImageView = UIImageView()
     var locationCircle : GMSCircle = GMSCircle()
+    var marker_myLocation : GMSMarker = GMSMarker()
     
     // marker tapped
     var marker_tapped : GMSMarker = GMSMarker()
@@ -91,9 +92,11 @@ class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapVie
         if(uiview_mapView != nil){
             mapView.settings.myLocationButton = true
             mapView.padding = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
-            let marker = GMSMarker()
-            marker.position = camera.target
             
+            //  標記主要位置
+            self.marker_myLocation.position = camera.target
+            self.marker_myLocation.map = mapView
+
             do {
                 // Set the map style by passing the URL of the local file.
                 if let styleURL = Bundle.main.url(forResource: "sdstyle", withExtension: "json") {
@@ -104,7 +107,6 @@ class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapVie
             } catch {
                 NSLog("One or more of the map styles failed to load. \(error)")
             }
-            marker.map = mapView
             
             // 製作google circle 圓圈
             self.locationCircle.radius = 40 // Meters
@@ -199,5 +201,13 @@ class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapVie
             
         }
     }
+    
+    //    MARK: - BTN ACTION
+    @IBAction func btn_report(_ sender: Any) {
+        self.marker_myLocation.position = CLLocationCoordinate2D(latitude: 24.180134, longitude: 120.645128)
+        self.locationCircle.position = CLLocationCoordinate2D(latitude: 24.180134, longitude: 120.645128)
+
+    }
+    
 
 }
