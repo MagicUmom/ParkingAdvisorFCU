@@ -1,0 +1,933 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		280C1E861F0ABF4600CE2B1C /* PASingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280C1E851F0ABF4600CE2B1C /* PASingleton.swift */; };
+		2817CD651F01365B002DDEB7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2817CD641F01365B002DDEB7 /* DetailViewController.swift */; };
+		283651C51EA13EDA00A014E1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283651C41EA13EDA00A014E1 /* CoreLocation.framework */; };
+		286D27161F5ED62800D8D46F /* CircleBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286D27151F5ED62800D8D46F /* CircleBarViewController.swift */; };
+		289679B01F1CC6740046DB5F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289679AF1F1CC6740046DB5F /* TabBarViewController.swift */; };
+		28B518F61F7431D300CC9F6A /* TestSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B518F51F7431D300CC9F6A /* TestSecondViewController.swift */; };
+		43DC77763360D00E2235A30F /* Pods_ParkingAdvisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B458903D2B55C3AD3F1CC02C /* Pods_ParkingAdvisor.framework */; };
+		701E4D3F1EA485D800CAC177 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E4D3E1EA485D800CAC177 /* HistoryViewController.swift */; };
+		701E4D431EA4B68D00CAC177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701E4D421EA4B68D00CAC177 /* Assets.xcassets */; };
+		708D50401E9B502E00DB4ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D503F1E9B502E00DB4ED9 /* AppDelegate.swift */; };
+		708D50421E9B502E00DB4ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D50411E9B502E00DB4ED9 /* ViewController.swift */; };
+		708D50451E9B502E00DB4ED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708D50431E9B502E00DB4ED9 /* Main.storyboard */; };
+		708D504A1E9B502E00DB4ED9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 708D50481E9B502E00DB4ED9 /* LaunchScreen.storyboard */; };
+		708D50551E9B502F00DB4ED9 /* ParkingAdvisorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D50541E9B502F00DB4ED9 /* ParkingAdvisorTests.swift */; };
+		708D50601E9B502F00DB4ED9 /* ParkingAdvisorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D505F1E9B502F00DB4ED9 /* ParkingAdvisorUITests.swift */; };
+		708D506E1E9B529600DB4ED9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 708D506D1E9B529600DB4ED9 /* Podfile */; };
+		70CE341F1E9CA63200595C55 /* dashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CE341E1E9CA63200595C55 /* dashboardViewController.swift */; };
+		70CE34211EA0B6B000595C55 /* picts in Resources */ = {isa = PBXBuildFile; fileRef = 70CE34201EA0B6AF00595C55 /* picts */; };
+		70CE34231EA0BD0700595C55 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CE34221EA0BD0700595C55 /* MenuViewController.swift */; };
+		70CE34251EA0C4BB00595C55 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CE34241EA0C4BB00595C55 /* BaseViewController.swift */; };
+		B100B7721EC41545008175AA /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100B7711EC41545008175AA /* TestViewController.swift */; };
+		B10D119F1F0E1CCB00798AE6 /* Pulsator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10D11961F0E1CCA00798AE6 /* Pulsator.swift */; };
+		B118D7091EF2770500DB64B7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B118D7081EF2770500DB64B7 /* SwiftyJSON.swift */; };
+		B118D7131EF2B3E200DB64B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D50411E9B502E00DB4ED9 /* ViewController.swift */; };
+		B118D71C1EF2B3E300DB64B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708D50411E9B502E00DB4ED9 /* ViewController.swift */; };
+		B1399B761F123F6600F44736 /* bstyle.json in Resources */ = {isa = PBXBuildFile; fileRef = B1399B751F123F6600F44736 /* bstyle.json */; };
+		B1399B811F1601D500F44736 /* StoryboardiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1399B801F1601D500F44736 /* StoryboardiPad.storyboard */; };
+		B1452A661F57F189006558C2 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1452A651F57F189006558C2 /* GoogleMaps.bundle */; };
+		B1452A771F6002AA006558C2 /* PAConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1452A761F6002AA006558C2 /* PAConfig.swift */; };
+		B16996081F1C70400070DDDD /* database.json in Resources */ = {isa = PBXBuildFile; fileRef = B16996071F1C70400070DDDD /* database.json */; };
+		B186B3951F0CC49900EB4998 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186B3941F0CC49900EB4998 /* CommentViewController.swift */; };
+		B1B2359A1F6F955B0085931A /* ServerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B235991F6F955B0085931A /* ServerCommunicator.swift */; };
+		B1E934171F04AD6600F45213 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E934161F04AD6600F45213 /* ReportViewController.swift */; };
+		B1E934211F04CCD900F45213 /* MonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E934201F04CCD900F45213 /* MonitorViewController.swift */; };
+		B1E934231F0A2A8F00F45213 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E934221F0A2A8E00F45213 /* SettingViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		708D50511E9B502F00DB4ED9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708D50341E9B502E00DB4ED9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 708D503B1E9B502E00DB4ED9;
+			remoteInfo = ParkingAdvisor;
+		};
+		708D505C1E9B502F00DB4ED9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708D50341E9B502E00DB4ED9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 708D503B1E9B502E00DB4ED9;
+			remoteInfo = ParkingAdvisor;
+		};
+		B118D6F91EF2744200DB64B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B118D6EE1EF2744200DB64B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		B118D6FB1EF2744200DB64B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B118D6EE1EF2744200DB64B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		B118D6FD1EF2744200DB64B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B118D6EE1EF2744200DB64B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX";
+		};
+		B118D6FF1EF2744200DB64B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B118D6EE1EF2744200DB64B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX Tests";
+		};
+		B118D7011EF2744200DB64B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B118D6EE1EF2744200DB64B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+		B118D7031EF2744200DB64B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B118D6EE1EF2744200DB64B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7236B4F61BAC14150020529B;
+			remoteInfo = "SwiftyJSON tvOS";
+		};
+		B118D7051EF2744200DB64B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B118D6EE1EF2744200DB64B7 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
+			remoteInfo = "SwiftyJSON tvOS Tests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B1B235AF1F6FAF250085931A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /Users/pepe/Documents/github/ParkingAdvisorV2/Pods;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		280C1E851F0ABF4600CE2B1C /* PASingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PASingleton.swift; sourceTree = "<group>"; };
+		2817CD641F01365B002DDEB7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		283651C41EA13EDA00A014E1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		286D27151F5ED62800D8D46F /* CircleBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBarViewController.swift; sourceTree = "<group>"; };
+		289679AF1F1CC6740046DB5F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		28B518F51F7431D300CC9F6A /* TestSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSecondViewController.swift; sourceTree = "<group>"; };
+		33A2C6A96555BFD084B110B2 /* Pods-ParkingAdvisor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingAdvisor.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkingAdvisor/Pods-ParkingAdvisor.release.xcconfig"; sourceTree = "<group>"; };
+		701E4D3E1EA485D800CAC177 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		701E4D421EA4B68D00CAC177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		708D503C1E9B502E00DB4ED9 /* ParkingAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		708D503F1E9B502E00DB4ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		708D50411E9B502E00DB4ED9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		708D50441E9B502E00DB4ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		708D50491E9B502E00DB4ED9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		708D504B1E9B502E00DB4ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		708D50501E9B502F00DB4ED9 /* ParkingAdvisorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingAdvisorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		708D50541E9B502F00DB4ED9 /* ParkingAdvisorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingAdvisorTests.swift; sourceTree = "<group>"; };
+		708D50561E9B502F00DB4ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		708D505B1E9B502F00DB4ED9 /* ParkingAdvisorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingAdvisorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		708D505F1E9B502F00DB4ED9 /* ParkingAdvisorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingAdvisorUITests.swift; sourceTree = "<group>"; };
+		708D50611E9B502F00DB4ED9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		708D506D1E9B529600DB4ED9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		70CE341E1E9CA63200595C55 /* dashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dashboardViewController.swift; sourceTree = "<group>"; };
+		70CE34201EA0B6AF00595C55 /* picts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = picts; sourceTree = "<group>"; };
+		70CE34221EA0BD0700595C55 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		70CE34241EA0C4BB00595C55 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		714C08719406558C04E46410 /* Pods-ParkingAdvisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingAdvisor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkingAdvisor/Pods-ParkingAdvisor.debug.xcconfig"; sourceTree = "<group>"; };
+		B100B7711EC41545008175AA /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		B1014C301F73617800EBFB52 /* ParkingAdvisor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ParkingAdvisor.entitlements; sourceTree = "<group>"; };
+		B10D11961F0E1CCA00798AE6 /* Pulsator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsator.swift; sourceTree = "<group>"; };
+		B118D6EE1EF2744200DB64B7 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		B118D7081EF2770500DB64B7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		B1399B751F123F6600F44736 /* bstyle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bstyle.json; sourceTree = "<group>"; };
+		B1399B801F1601D500F44736 /* StoryboardiPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardiPad.storyboard; sourceTree = "<group>"; };
+		B1452A5A1F57EFDD006558C2 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		B1452A631F57F118006558C2 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		B1452A641F57F11C006558C2 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		B1452A651F57F189006558C2 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		B1452A761F6002AA006558C2 /* PAConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAConfig.swift; sourceTree = "<group>"; };
+		B16996071F1C70400070DDDD /* database.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = database.json; sourceTree = SOURCE_ROOT; };
+		B186B3941F0CC49900EB4998 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		B1B235991F6F955B0085931A /* ServerCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCommunicator.swift; sourceTree = "<group>"; };
+		B1E934161F04AD6600F45213 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		B1E934201F04CCD900F45213 /* MonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorViewController.swift; sourceTree = "<group>"; };
+		B1E934221F0A2A8E00F45213 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		B458903D2B55C3AD3F1CC02C /* Pods_ParkingAdvisor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkingAdvisor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		708D50391E9B502E00DB4ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DC77763360D00E2235A30F /* Pods_ParkingAdvisor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708D504D1E9B502F00DB4ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708D50581E9B502F00DB4ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283651C51EA13EDA00A014E1 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		599830866C24CAF41D5FA033 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				714C08719406558C04E46410 /* Pods-ParkingAdvisor.debug.xcconfig */,
+				33A2C6A96555BFD084B110B2 /* Pods-ParkingAdvisor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63A822A1A9103D4F1018F8A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1452A651F57F189006558C2 /* GoogleMaps.bundle */,
+				B1452A641F57F11C006558C2 /* GoogleMapsCore.framework */,
+				B1452A631F57F118006558C2 /* GoogleMaps.framework */,
+				B1452A5A1F57EFDD006558C2 /* GoogleMapsBase.framework */,
+				B118D6EE1EF2744200DB64B7 /* SwiftyJSON.xcodeproj */,
+				283651C41EA13EDA00A014E1 /* CoreLocation.framework */,
+				B458903D2B55C3AD3F1CC02C /* Pods_ParkingAdvisor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		708D50331E9B502E00DB4ED9 = {
+			isa = PBXGroup;
+			children = (
+				70CE34201EA0B6AF00595C55 /* picts */,
+				708D506D1E9B529600DB4ED9 /* Podfile */,
+				708D503E1E9B502E00DB4ED9 /* ParkingAdvisor */,
+				708D50531E9B502F00DB4ED9 /* ParkingAdvisorTests */,
+				708D505E1E9B502F00DB4ED9 /* ParkingAdvisorUITests */,
+				708D503D1E9B502E00DB4ED9 /* Products */,
+				63A822A1A9103D4F1018F8A7 /* Frameworks */,
+				599830866C24CAF41D5FA033 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		708D503D1E9B502E00DB4ED9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				708D503C1E9B502E00DB4ED9 /* ParkingAdvisor.app */,
+				708D50501E9B502F00DB4ED9 /* ParkingAdvisorTests.xctest */,
+				708D505B1E9B502F00DB4ED9 /* ParkingAdvisorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		708D503E1E9B502E00DB4ED9 /* ParkingAdvisor */ = {
+			isa = PBXGroup;
+			children = (
+				B1014C301F73617800EBFB52 /* ParkingAdvisor.entitlements */,
+				B11641491F16204A003519C1 /* VC */,
+				B1452A691F57FCA3006558C2 /* Module */,
+				B1399B8A1F1601E900F44736 /* View */,
+				701E4D421EA4B68D00CAC177 /* Assets.xcassets */,
+				708D504B1E9B502E00DB4ED9 /* Info.plist */,
+				B1399B751F123F6600F44736 /* bstyle.json */,
+				B16996071F1C70400070DDDD /* database.json */,
+			);
+			path = ParkingAdvisor;
+			sourceTree = "<group>";
+		};
+		708D50531E9B502F00DB4ED9 /* ParkingAdvisorTests */ = {
+			isa = PBXGroup;
+			children = (
+				708D50541E9B502F00DB4ED9 /* ParkingAdvisorTests.swift */,
+				708D50561E9B502F00DB4ED9 /* Info.plist */,
+			);
+			path = ParkingAdvisorTests;
+			sourceTree = "<group>";
+		};
+		708D505E1E9B502F00DB4ED9 /* ParkingAdvisorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				708D505F1E9B502F00DB4ED9 /* ParkingAdvisorUITests.swift */,
+				708D50611E9B502F00DB4ED9 /* Info.plist */,
+			);
+			path = ParkingAdvisorUITests;
+			sourceTree = "<group>";
+		};
+		B11641491F16204A003519C1 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				70CE341E1E9CA63200595C55 /* dashboardViewController.swift */,
+				B186B3941F0CC49900EB4998 /* CommentViewController.swift */,
+				B1E934221F0A2A8E00F45213 /* SettingViewController.swift */,
+				B1E934161F04AD6600F45213 /* ReportViewController.swift */,
+				B100B7711EC41545008175AA /* TestViewController.swift */,
+				701E4D3E1EA485D800CAC177 /* HistoryViewController.swift */,
+				70CE34241EA0C4BB00595C55 /* BaseViewController.swift */,
+				2817CD641F01365B002DDEB7 /* DetailViewController.swift */,
+				708D50411E9B502E00DB4ED9 /* ViewController.swift */,
+				70CE34221EA0BD0700595C55 /* MenuViewController.swift */,
+				B1E934201F04CCD900F45213 /* MonitorViewController.swift */,
+				289679AF1F1CC6740046DB5F /* TabBarViewController.swift */,
+				286D27151F5ED62800D8D46F /* CircleBarViewController.swift */,
+				28B518F51F7431D300CC9F6A /* TestSecondViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		B118D6EF1EF2744200DB64B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B118D6FA1EF2744200DB64B7 /* SwiftyJSON.framework */,
+				B118D6FC1EF2744200DB64B7 /* SwiftyJSON iOS Tests.xctest */,
+				B118D6FE1EF2744200DB64B7 /* SwiftyJSON.framework */,
+				B118D7001EF2744200DB64B7 /* SwiftyJSON OSX Tests.xctest */,
+				B118D7021EF2744200DB64B7 /* SwiftyJSON.framework */,
+				B118D7041EF2744200DB64B7 /* SwiftyJSON.framework */,
+				B118D7061EF2744200DB64B7 /* SwiftyJSON tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1399B8A1F1601E900F44736 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				708D50431E9B502E00DB4ED9 /* Main.storyboard */,
+				708D50481E9B502E00DB4ED9 /* LaunchScreen.storyboard */,
+				B1399B801F1601D500F44736 /* StoryboardiPad.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B1452A691F57FCA3006558C2 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				B118D7081EF2770500DB64B7 /* SwiftyJSON.swift */,
+				B10D11961F0E1CCA00798AE6 /* Pulsator.swift */,
+				708D503F1E9B502E00DB4ED9 /* AppDelegate.swift */,
+				280C1E851F0ABF4600CE2B1C /* PASingleton.swift */,
+				B1452A761F6002AA006558C2 /* PAConfig.swift */,
+				B1B235991F6F955B0085931A /* ServerCommunicator.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		708D503B1E9B502E00DB4ED9 /* ParkingAdvisor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 708D50641E9B502F00DB4ED9 /* Build configuration list for PBXNativeTarget "ParkingAdvisor" */;
+			buildPhases = (
+				A449130B75F6311B453406F8 /* [CP] Check Pods Manifest.lock */,
+				708D50381E9B502E00DB4ED9 /* Sources */,
+				708D50391E9B502E00DB4ED9 /* Frameworks */,
+				708D503A1E9B502E00DB4ED9 /* Resources */,
+				B1B235AF1F6FAF250085931A /* Embed Frameworks */,
+				EE4B07479E607C33EA185378 /* [CP] Embed Pods Frameworks */,
+				EB0E035106E79A94F964C223 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParkingAdvisor;
+			productName = ParkingAdvisor;
+			productReference = 708D503C1E9B502E00DB4ED9 /* ParkingAdvisor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		708D504F1E9B502F00DB4ED9 /* ParkingAdvisorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 708D50671E9B502F00DB4ED9 /* Build configuration list for PBXNativeTarget "ParkingAdvisorTests" */;
+			buildPhases = (
+				708D504C1E9B502F00DB4ED9 /* Sources */,
+				708D504D1E9B502F00DB4ED9 /* Frameworks */,
+				708D504E1E9B502F00DB4ED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				708D50521E9B502F00DB4ED9 /* PBXTargetDependency */,
+			);
+			name = ParkingAdvisorTests;
+			productName = ParkingAdvisorTests;
+			productReference = 708D50501E9B502F00DB4ED9 /* ParkingAdvisorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		708D505A1E9B502F00DB4ED9 /* ParkingAdvisorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 708D506A1E9B502F00DB4ED9 /* Build configuration list for PBXNativeTarget "ParkingAdvisorUITests" */;
+			buildPhases = (
+				708D50571E9B502F00DB4ED9 /* Sources */,
+				708D50581E9B502F00DB4ED9 /* Frameworks */,
+				708D50591E9B502F00DB4ED9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				708D505D1E9B502F00DB4ED9 /* PBXTargetDependency */,
+			);
+			name = ParkingAdvisorUITests;
+			productName = ParkingAdvisorUITests;
+			productReference = 708D505B1E9B502F00DB4ED9 /* ParkingAdvisorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		708D50341E9B502E00DB4ED9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = MCLAB;
+				TargetAttributes = {
+					708D503B1E9B502E00DB4ED9 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = XW3GGB6ENP;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					708D504F1E9B502F00DB4ED9 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = XW3GGB6ENP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 708D503B1E9B502E00DB4ED9;
+					};
+					708D505A1E9B502F00DB4ED9 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = XW3GGB6ENP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 708D503B1E9B502E00DB4ED9;
+					};
+				};
+			};
+			buildConfigurationList = 708D50371E9B502E00DB4ED9 /* Build configuration list for PBXProject "ParkingAdvisor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 708D50331E9B502E00DB4ED9;
+			productRefGroup = 708D503D1E9B502E00DB4ED9 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B118D6EF1EF2744200DB64B7 /* Products */;
+					ProjectRef = B118D6EE1EF2744200DB64B7 /* SwiftyJSON.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				708D503B1E9B502E00DB4ED9 /* ParkingAdvisor */,
+				708D504F1E9B502F00DB4ED9 /* ParkingAdvisorTests */,
+				708D505A1E9B502F00DB4ED9 /* ParkingAdvisorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B118D6FA1EF2744200DB64B7 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = B118D6F91EF2744200DB64B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B118D6FC1EF2744200DB64B7 /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = B118D6FB1EF2744200DB64B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B118D6FE1EF2744200DB64B7 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = B118D6FD1EF2744200DB64B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B118D7001EF2744200DB64B7 /* SwiftyJSON OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON OSX Tests.xctest";
+			remoteRef = B118D6FF1EF2744200DB64B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B118D7021EF2744200DB64B7 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = B118D7011EF2744200DB64B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B118D7041EF2744200DB64B7 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = B118D7031EF2744200DB64B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B118D7061EF2744200DB64B7 /* SwiftyJSON tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON tvOS Tests.xctest";
+			remoteRef = B118D7051EF2744200DB64B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		708D503A1E9B502E00DB4ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1452A661F57F189006558C2 /* GoogleMaps.bundle in Resources */,
+				70CE34211EA0B6B000595C55 /* picts in Resources */,
+				708D504A1E9B502E00DB4ED9 /* LaunchScreen.storyboard in Resources */,
+				B16996081F1C70400070DDDD /* database.json in Resources */,
+				B1399B761F123F6600F44736 /* bstyle.json in Resources */,
+				708D506E1E9B529600DB4ED9 /* Podfile in Resources */,
+				708D50451E9B502E00DB4ED9 /* Main.storyboard in Resources */,
+				701E4D431EA4B68D00CAC177 /* Assets.xcassets in Resources */,
+				B1399B811F1601D500F44736 /* StoryboardiPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708D504E1E9B502F00DB4ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708D50591E9B502F00DB4ED9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A449130B75F6311B453406F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParkingAdvisor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB0E035106E79A94F964C223 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ParkingAdvisor/Pods-ParkingAdvisor-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkingAdvisor/Pods-ParkingAdvisor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE4B07479E607C33EA185378 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ParkingAdvisor/Pods-ParkingAdvisor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkingAdvisor/Pods-ParkingAdvisor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		708D50381E9B502E00DB4ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280C1E861F0ABF4600CE2B1C /* PASingleton.swift in Sources */,
+				2817CD651F01365B002DDEB7 /* DetailViewController.swift in Sources */,
+				70CE34231EA0BD0700595C55 /* MenuViewController.swift in Sources */,
+				B1E934211F04CCD900F45213 /* MonitorViewController.swift in Sources */,
+				28B518F61F7431D300CC9F6A /* TestSecondViewController.swift in Sources */,
+				289679B01F1CC6740046DB5F /* TabBarViewController.swift in Sources */,
+				708D50421E9B502E00DB4ED9 /* ViewController.swift in Sources */,
+				B1452A771F6002AA006558C2 /* PAConfig.swift in Sources */,
+				B1E934231F0A2A8F00F45213 /* SettingViewController.swift in Sources */,
+				B118D7091EF2770500DB64B7 /* SwiftyJSON.swift in Sources */,
+				B186B3951F0CC49900EB4998 /* CommentViewController.swift in Sources */,
+				708D50401E9B502E00DB4ED9 /* AppDelegate.swift in Sources */,
+				B1B2359A1F6F955B0085931A /* ServerCommunicator.swift in Sources */,
+				286D27161F5ED62800D8D46F /* CircleBarViewController.swift in Sources */,
+				70CE341F1E9CA63200595C55 /* dashboardViewController.swift in Sources */,
+				B10D119F1F0E1CCB00798AE6 /* Pulsator.swift in Sources */,
+				B1E934171F04AD6600F45213 /* ReportViewController.swift in Sources */,
+				701E4D3F1EA485D800CAC177 /* HistoryViewController.swift in Sources */,
+				B100B7721EC41545008175AA /* TestViewController.swift in Sources */,
+				70CE34251EA0C4BB00595C55 /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708D504C1E9B502F00DB4ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B118D7131EF2B3E200DB64B7 /* ViewController.swift in Sources */,
+				708D50551E9B502F00DB4ED9 /* ParkingAdvisorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		708D50571E9B502F00DB4ED9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B118D71C1EF2B3E300DB64B7 /* ViewController.swift in Sources */,
+				708D50601E9B502F00DB4ED9 /* ParkingAdvisorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		708D50521E9B502F00DB4ED9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 708D503B1E9B502E00DB4ED9 /* ParkingAdvisor */;
+			targetProxy = 708D50511E9B502F00DB4ED9 /* PBXContainerItemProxy */;
+		};
+		708D505D1E9B502F00DB4ED9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 708D503B1E9B502E00DB4ED9 /* ParkingAdvisor */;
+			targetProxy = 708D505C1E9B502F00DB4ED9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		708D50431E9B502E00DB4ED9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				708D50441E9B502E00DB4ED9 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		708D50481E9B502E00DB4ED9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				708D50491E9B502E00DB4ED9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		708D50621E9B502F00DB4ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		708D50631E9B502F00DB4ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		708D50651E9B502F00DB4ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714C08719406558C04E46410 /* Pods-ParkingAdvisor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ParkingAdvisor/ParkingAdvisor.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = XW3GGB6ENP;
+				INFOPLIST_FILE = ParkingAdvisor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.ParkingAdvisor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		708D50661E9B502F00DB4ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A2C6A96555BFD084B110B2 /* Pods-ParkingAdvisor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ParkingAdvisor/ParkingAdvisor.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = XW3GGB6ENP;
+				INFOPLIST_FILE = ParkingAdvisor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.ParkingAdvisor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		708D50681E9B502F00DB4ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XW3GGB6ENP;
+				INFOPLIST_FILE = ParkingAdvisorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.ParkingAdvisorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingAdvisor.app/ParkingAdvisor";
+			};
+			name = Debug;
+		};
+		708D50691E9B502F00DB4ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XW3GGB6ENP;
+				INFOPLIST_FILE = ParkingAdvisorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.ParkingAdvisorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingAdvisor.app/ParkingAdvisor";
+			};
+			name = Release;
+		};
+		708D506B1E9B502F00DB4ED9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XW3GGB6ENP;
+				INFOPLIST_FILE = ParkingAdvisorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.ParkingAdvisorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ParkingAdvisor;
+			};
+			name = Debug;
+		};
+		708D506C1E9B502F00DB4ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XW3GGB6ENP;
+				INFOPLIST_FILE = ParkingAdvisorUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.ParkingAdvisorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ParkingAdvisor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		708D50371E9B502E00DB4ED9 /* Build configuration list for PBXProject "ParkingAdvisor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708D50621E9B502F00DB4ED9 /* Debug */,
+				708D50631E9B502F00DB4ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		708D50641E9B502F00DB4ED9 /* Build configuration list for PBXNativeTarget "ParkingAdvisor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708D50651E9B502F00DB4ED9 /* Debug */,
+				708D50661E9B502F00DB4ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		708D50671E9B502F00DB4ED9 /* Build configuration list for PBXNativeTarget "ParkingAdvisorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708D50681E9B502F00DB4ED9 /* Debug */,
+				708D50691E9B502F00DB4ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		708D506A1E9B502F00DB4ED9 /* Build configuration list for PBXNativeTarget "ParkingAdvisorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708D506B1E9B502F00DB4ED9 /* Debug */,
+				708D506C1E9B502F00DB4ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 708D50341E9B502E00DB4ED9 /* Project object */;
+}
