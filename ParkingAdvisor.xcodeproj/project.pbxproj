@@ -41,6 +41,8 @@
 		B16996081F1C70400070DDDD /* database.json in Resources */ = {isa = PBXBuildFile; fileRef = B16996071F1C70400070DDDD /* database.json */; };
 		B186B3951F0CC49900EB4998 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186B3941F0CC49900EB4998 /* CommentViewController.swift */; };
 		B1B2359A1F6F955B0085931A /* ServerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B235991F6F955B0085931A /* ServerCommunicator.swift */; };
+		B1BDEF9F1FD86E01008B9908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BDEF9E1FD86E01008B9908 /* Foundation.framework */; };
+		B1BDEFA11FD86E08008B9908 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BDEFA01FD86E08008B9908 /* Security.framework */; };
 		B1E934171F04AD6600F45213 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E934161F04AD6600F45213 /* ReportViewController.swift */; };
 		B1E934211F04CCD900F45213 /* MonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E934201F04CCD900F45213 /* MonitorViewController.swift */; };
 		B1E934231F0A2A8F00F45213 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E934221F0A2A8E00F45213 /* SettingViewController.swift */; };
@@ -170,6 +172,8 @@
 		B16996071F1C70400070DDDD /* database.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = database.json; sourceTree = SOURCE_ROOT; };
 		B186B3941F0CC49900EB4998 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		B1B235991F6F955B0085931A /* ServerCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCommunicator.swift; sourceTree = "<group>"; };
+		B1BDEF9E1FD86E01008B9908 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1BDEFA01FD86E08008B9908 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B1E934161F04AD6600F45213 /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		B1E934201F04CCD900F45213 /* MonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorViewController.swift; sourceTree = "<group>"; };
 		B1E934221F0A2A8E00F45213 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1BDEFA11FD86E08008B9908 /* Security.framework in Frameworks */,
+				B1BDEF9F1FD86E01008B9908 /* Foundation.framework in Frameworks */,
 				43DC77763360D00E2235A30F /* Pods_ParkingAdvisor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +221,8 @@
 		63A822A1A9103D4F1018F8A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1BDEFA01FD86E08008B9908 /* Security.framework */,
+				B1BDEF9E1FD86E01008B9908 /* Foundation.framework */,
 				B1452A651F57F189006558C2 /* GoogleMaps.bundle */,
 				B1452A641F57F11C006558C2 /* GoogleMapsCore.framework */,
 				B1452A631F57F118006558C2 /* GoogleMaps.framework */,
@@ -595,11 +603,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ParkingAdvisor/Pods-ParkingAdvisor-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/NWPusher/NWPusher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NWPusher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -809,7 +819,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ParkingAdvisor/ParkingAdvisor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Wei-Kang Wang (73TA5W8DVP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei-Kang Wang (73TA5W8DVP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XW3GGB6ENP;
 				INFOPLIST_FILE = ParkingAdvisor/Info.plist;
@@ -817,7 +827,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.ParkingAdvisor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "11d52368-607e-46c8-aa44-321c3f40b1f6";
+				PROVISIONING_PROFILE = "02750163-40cc-49c5-94d2-c4b7f51bfb38";
 				PROVISIONING_PROFILE_SPECIFIER = "ParkingAdvisor Demo";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -831,7 +841,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ParkingAdvisor/ParkingAdvisor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Wei-Kang Wang (73TA5W8DVP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei-Kang Wang (73TA5W8DVP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XW3GGB6ENP;
 				INFOPLIST_FILE = ParkingAdvisor/Info.plist;
@@ -839,7 +849,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.ParkingAdvisor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "11d52368-607e-46c8-aa44-321c3f40b1f6";
+				PROVISIONING_PROFILE = "391f9dab-4535-43e8-943d-fdc8ecc329f6";
 				PROVISIONING_PROFILE_SPECIFIER = "ParkingAdvisor Demo";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

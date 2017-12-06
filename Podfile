@@ -10,6 +10,7 @@ pod 'AFNetworking','~> 3.0'
 #pod 'KYCircularProgress'
 pod 'SwiftyJSON'
 #pod 'Pulsator'
+pod 'NWPusher', '~> 0.7.0'
 
 end
 

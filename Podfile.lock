@@ -21,20 +21,23 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.5.0):
     - GoogleMaps/Base (= 2.5.0)
+  - NWPusher (0.7.5)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - GoogleMaps
   - GooglePlaces
+  - NWPusher (~> 0.7.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
   GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
+  NWPusher: 9b29a44754d88cb02c28a1e9bc8750845506123e
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: facc6ec121f04bab5eec63702f4e19400343370e
+PODFILE CHECKSUM: 41d6de38ec67695a877b4e530ed098486590184c
 
 COCOAPODS: 1.3.1

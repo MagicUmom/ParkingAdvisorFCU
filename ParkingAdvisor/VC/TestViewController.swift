@@ -21,7 +21,7 @@ class TestViewController: UIViewController {
         super.viewDidLoad()
         initBackground()
 //        kAnimate()
-        
+
     }
 
     override func didReceiveMemoryWarning() {
