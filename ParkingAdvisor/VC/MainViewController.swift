@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMaps
 import AFNetworking
-
+import Firebase
 
 class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapViewDelegate {
     
@@ -206,8 +206,21 @@ class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapVie
     
     //    MARK: - BTN ACTION
     @IBAction func btn_report(_ sender: Any) {
-        self.marker_myLocation.position = CLLocationCoordinate2D(latitude: 24.180134, longitude: 120.645128)
-        self.locationCircle.position = CLLocationCoordinate2D(latitude: 24.180134, longitude: 120.645128)
+//        self.marker_myLocation.position = CLLocationCoordinate2D(latitude: 24.180134, longitude: 120.645128)
+//        self.locationCircle.position = CLLocationCoordinate2D(latitude: 24.180134, longitude: 120.645128)
+        
+        // [START subscribe_topic]
+        Messaging.messaging().subscribe(toTopic: "news")
+        print("Subscribed to news topic")
+        // [END subscribe_topic]
+
+
+    }
+    @IBAction func btn_monitor(_ sender: Any) {
+        // [START log_fcm_reg_token]
+        let token = Messaging.messaging().fcmToken
+        print("FCM token: \(token ?? "")")
+        // [END log_fcm_reg_token]
 
     }
     

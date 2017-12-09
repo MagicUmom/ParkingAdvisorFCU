@@ -40,6 +40,7 @@
 		B1452A771F6002AA006558C2 /* PAConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1452A761F6002AA006558C2 /* PAConfig.swift */; };
 		B16996081F1C70400070DDDD /* database.json in Resources */ = {isa = PBXBuildFile; fileRef = B16996071F1C70400070DDDD /* database.json */; };
 		B186B3951F0CC49900EB4998 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186B3941F0CC49900EB4998 /* CommentViewController.swift */; };
+		B193D9FA1FDBC38F00104CA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B193D9F91FDBC38F00104CA8 /* GoogleService-Info.plist */; };
 		B1B2359A1F6F955B0085931A /* ServerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B235991F6F955B0085931A /* ServerCommunicator.swift */; };
 		B1BDEF9F1FD86E01008B9908 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BDEF9E1FD86E01008B9908 /* Foundation.framework */; };
 		B1BDEFA11FD86E08008B9908 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BDEFA01FD86E08008B9908 /* Security.framework */; };
@@ -171,6 +172,7 @@
 		B1452A761F6002AA006558C2 /* PAConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAConfig.swift; sourceTree = "<group>"; };
 		B16996071F1C70400070DDDD /* database.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = database.json; sourceTree = SOURCE_ROOT; };
 		B186B3941F0CC49900EB4998 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		B193D9F91FDBC38F00104CA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1B235991F6F955B0085931A /* ServerCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCommunicator.swift; sourceTree = "<group>"; };
 		B1BDEF9E1FD86E01008B9908 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B1BDEFA01FD86E08008B9908 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -341,6 +343,7 @@
 		B1452A691F57FCA3006558C2 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				B193D9F91FDBC38F00104CA8 /* GoogleService-Info.plist */,
 				B118D7081EF2770500DB64B7 /* SwiftyJSON.swift */,
 				B10D11961F0E1CCA00798AE6 /* Pulsator.swift */,
 				708D503F1E9B502E00DB4ED9 /* AppDelegate.swift */,
@@ -536,6 +539,7 @@
 				708D506E1E9B529600DB4ED9 /* Podfile in Resources */,
 				708D50451E9B502E00DB4ED9 /* Main.storyboard in Resources */,
 				701E4D431EA4B68D00CAC177 /* Assets.xcassets in Resources */,
+				B193D9FA1FDBC38F00104CA8 /* GoogleService-Info.plist in Resources */,
 				287564961FC1C88E00C8DF68 /* sdstyle.json in Resources */,
 				B1399B811F1601D500F44736 /* StoryboardiPad.storyboard in Resources */,
 			);
@@ -603,14 +607,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ParkingAdvisor/Pods-ParkingAdvisor-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/NWPusher/NWPusher.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NWPusher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

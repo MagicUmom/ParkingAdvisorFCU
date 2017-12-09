@@ -11,6 +11,8 @@ pod 'AFNetworking','~> 3.0'
 pod 'SwiftyJSON'
 #pod 'Pulsator'
 pod 'NWPusher', '~> 0.7.0'
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
 
 end
 
