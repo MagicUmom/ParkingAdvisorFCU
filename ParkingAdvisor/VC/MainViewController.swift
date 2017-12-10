@@ -8,14 +8,15 @@
 
 import UIKit
 import GoogleMaps
-import AFNetworking
 import Firebase
+import Alamofire
 
 class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapViewDelegate {
     
     let config  = sizeConfig()
 
     @IBOutlet weak var uiview_mapView: UIView!
+    
     
     // map view
     var isMapInit : Bool = false
@@ -95,7 +96,7 @@ class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapVie
             mapView.settings.myLocationButton = true
             mapView.padding = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
             
-            //  標記主要位置
+            //  標記主要位置
             self.marker_myLocation.position = camera.target
             self.marker_myLocation.map = mapView
 
@@ -217,12 +218,25 @@ class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapVie
 
     }
     @IBAction func btn_monitor(_ sender: Any) {
-        // [START log_fcm_reg_token]
+//         [START log_fcm_reg_token]
         let token = Messaging.messaging().fcmToken
         print("FCM token: \(token ?? "")")
-        // [END log_fcm_reg_token]
-
+//         [END log_fcm_reg_token]
+        
+        let parameters : Dictionary = [
+            "UUID":"231123",
+            "Latitude":"25.12345",
+            "Longitude":"124.123456"
+        ]
+        
+        Alamofire.request("http://140.134.25.56/api/GetPosition", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+        let comm = ServerCommunicator.shareInstance()
+        comm.send_location(parameter: parameters) {(json)in
+            if json == JSON.null {
+                print("send location fail")
+                return
+            }
+        }
     }
     
-
 }

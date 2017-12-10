@@ -606,7 +606,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ParkingAdvisor/Pods-ParkingAdvisor-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/NWPusher/NWPusher.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -615,7 +615,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NWPusher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -829,7 +829,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ParkingAdvisor/ParkingAdvisor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Wei-Kang Wang (73TA5W8DVP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei-Kang Wang (73TA5W8DVP)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XW3GGB6ENP;
 				INFOPLIST_FILE = ParkingAdvisor/Info.plist;
@@ -837,7 +837,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.ParkingAdvisor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "02750163-40cc-49c5-94d2-c4b7f51bfb38";
+				PROVISIONING_PROFILE = "391f9dab-4535-43e8-943d-fdc8ecc329f6";
 				PROVISIONING_PROFILE_SPECIFIER = "ParkingAdvisor Demo";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -851,7 +851,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ParkingAdvisor/ParkingAdvisor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Wei-Kang Wang (73TA5W8DVP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei-Kang Wang (73TA5W8DVP)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XW3GGB6ENP;
 				INFOPLIST_FILE = ParkingAdvisor/Info.plist;

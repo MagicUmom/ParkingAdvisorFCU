@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // [START set_messaging_delegate]
         Messaging.messaging().delegate = self
         // [END set_messaging_delegate]
-
+        
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
             UNUserNotificationCenter.current().delegate = self
@@ -44,7 +44,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerForRemoteNotifications()
         // [END register_for_notifications]
 
-        
+        // push notification
+//        let notificationTypes: UIUserNotificationType = [UIUserNotificationType.alert, UIUserNotificationType.badge, UIUserNotificationType.sound]
+//        let pushNotificationSettings = UIUserNotificationSettings(types: notificationTypes, categories: nil)
+//
+//        application.registerUserNotificationSettings(pushNotificationSettings)
+//        application.registerForRemoteNotifications()
+
 //        本地推播
 //        let center = UNUserNotificationCenter.current()
 //        center.requestAuthorization(options: [.badge , .sound , .alert]){(granted,error)in
@@ -55,6 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+
     // [START receive_message]
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
         // If you are receiving a notification message while your app is in the background,
@@ -103,7 +110,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Messaging.messaging().apnsToken = deviceToken
     }
 
-
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -125,7 +131,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
 //    本地推播
 //    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
 //        print("DEVICE TOKEN = \(deviceToken as NSData)")
@@ -149,7 +155,6 @@ extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
 }
-
 
 // [START ios_10_message_handling]
 @available(iOS 10, *)

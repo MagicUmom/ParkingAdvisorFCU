@@ -8,7 +8,6 @@
 
 import UIKit
 import GoogleMaps
-import AFNetworking
 
 class dashboardViewController: UIViewController ,CLLocationManagerDelegate, GMSMapViewDelegate , CircleBarProtocol{
     
