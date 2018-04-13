@@ -38,6 +38,7 @@
 		B1399B811F1601D500F44736 /* StoryboardiPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1399B801F1601D500F44736 /* StoryboardiPad.storyboard */; };
 		B1452A661F57F189006558C2 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1452A651F57F189006558C2 /* GoogleMaps.bundle */; };
 		B1452A771F6002AA006558C2 /* PAConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1452A761F6002AA006558C2 /* PAConfig.swift */; };
+		B159ED9D2081426600EAE2D3 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B159ED9C2081426600EAE2D3 /* WebViewController.swift */; };
 		B16996081F1C70400070DDDD /* database.json in Resources */ = {isa = PBXBuildFile; fileRef = B16996071F1C70400070DDDD /* database.json */; };
 		B186B3951F0CC49900EB4998 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B186B3941F0CC49900EB4998 /* CommentViewController.swift */; };
 		B193D9FA1FDBC38F00104CA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B193D9F91FDBC38F00104CA8 /* GoogleService-Info.plist */; };
@@ -170,6 +171,7 @@
 		B1452A641F57F11C006558C2 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		B1452A651F57F189006558C2 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		B1452A761F6002AA006558C2 /* PAConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAConfig.swift; sourceTree = "<group>"; };
+		B159ED9C2081426600EAE2D3 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B16996071F1C70400070DDDD /* database.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = database.json; sourceTree = SOURCE_ROOT; };
 		B186B3941F0CC49900EB4998 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		B193D9F91FDBC38F00104CA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -312,6 +314,7 @@
 				286D27151F5ED62800D8D46F /* CircleBarViewController.swift */,
 				28B518F51F7431D300CC9F6A /* TestSecondViewController.swift */,
 				287564931FC19A4600C8DF68 /* MainViewController.swift */,
+				B159ED9C2081426600EAE2D3 /* WebViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -592,7 +595,8 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -635,6 +639,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				287564941FC19A4600C8DF68 /* MainViewController.swift in Sources */,
+				B159ED9D2081426600EAE2D3 /* WebViewController.swift in Sources */,
 				280C1E861F0ABF4600CE2B1C /* PASingleton.swift in Sources */,
 				2817CD651F01365B002DDEB7 /* DetailViewController.swift in Sources */,
 				70CE34231EA0BD0700595C55 /* MenuViewController.swift in Sources */,

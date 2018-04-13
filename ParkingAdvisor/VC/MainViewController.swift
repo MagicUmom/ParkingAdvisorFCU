@@ -10,14 +10,18 @@ import UIKit
 import GoogleMaps
 import Firebase
 import Alamofire
+import WebKit
 
-class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapViewDelegate {
+class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapViewDelegate , WKUIDelegate{
     
     let config  = sizeConfig()
 
     @IBOutlet weak var uiview_mapView: UIView!
     
-    
+    // webview
+    var webView: WKWebView!
+//    var myWebView: UIWebView!
+
     // map view
     var isMapInit : Bool = false
     var mapView : GMSMapView!
@@ -43,9 +47,31 @@ class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapVie
         locationManager.delegate = self
         isMapInit = false
         initMap()
+        
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: CGRect(
+            x: 0, y: 0,
+            width: 414,
+            height:
+            320), configuration: webConfiguration)
+        webView.uiDelegate = self
+        webView.alpha = 0
+        let myURL = URL(string: "http://192.168.2.103:8081")
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
+        
+        self.view.addSubview(webView)
+
+        // webview Configuration
+//        let webConfiguration = WKWebViewConfiguration()
+//        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+//        webView.uiDelegate = self
+////        webView.alpha = 0
+//        uiview_mapView.addSubview(webView)
+
 
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         
         // 取得定位要求
@@ -210,9 +236,13 @@ class MainViewController: UIViewController ,CLLocationManagerDelegate, GMSMapVie
 //        self.marker_myLocation.position = CLLocationCoordinate2D(latitude: 24.180134, longitude: 120.645128)
 //        self.locationCircle.position = CLLocationCoordinate2D(latitude: 24.180134, longitude: 120.645128)
         
+        if webView.alpha == 1 {
+            webView.alpha = 0
+        }else {webView.alpha = 1}
+        
         // [START subscribe_topic]
         Messaging.messaging().subscribe(toTopic: "news")
-        print("Subscribed to news topic")
+        print("Subscribed to news topic!!")
         // [END subscribe_topic]
 
 
